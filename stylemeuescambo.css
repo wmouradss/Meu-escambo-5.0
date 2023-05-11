@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*HOME*/
+#logomarca{
+    text-align: left;
+    margin-left: 50px;
+}
+
+#logomarca img{
+    height: 100px;
+    margin-top: 25px;
+}
+
+.button-right{
+    background-color: rgb(164, 231, 148);
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 15px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin: -115px 25px;
+    float: right;
+}
+
+.button-left{
+    background-color: rgb(164, 231, 148);
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 15px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin: -115px 110px;
+    float: right;
+}
+
+#div{
+    background-color: rgb(163, 226, 121);
+    padding: 20px;
+}
+
+#carrossel{
+    display: block;
+    text-align: center;
+}
+
+.button-below{
+    background-color: rgb(99, 201, 32);
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 15px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    z-index: 150px; 
+    top: 90%;
+    right: 300px;
+}
+
+/*CARROSSEL*/
+
+[data-component="slideshow"] .slide {
+    display: none;
+    text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+
+/*CADASTRO*/
+.container_form {
+    width: 700px;
+    padding:3px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: center;
+}
+
+.container_form h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: black;
+    border-bottom: 1px rgb(164, 231, 148) solid;
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+}
+
+.form_grupo {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_input {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px #f2f2f2 solid;
+    background: #fdfdfd;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.submit { width:100%; float:left; }
+.submit_btn {
+    float: center;
+    display: block;
+    padding: 5px 30px;
+    border: none;
+    background-color: rgb(99, 201, 32);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.submit_btn:hover { background-color: rgb(164, 231, 148); transform: scale(1.03); }
+
+.submit_img{
+    float: right;
+    display: block;
+    padding: 3px 20px;
+    border: none;
+    background-color: rgb(197, 235, 187);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    border-radius: 30px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+input[type='file'] { display: none }
+
+.anexar label{
+    background-color: rgb(197, 235, 187);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin: 3px;
+    padding: 6px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+/*MAIS INFORMAÇÕES*/
+.informacoes p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-cadastrar{
+    float: center;
+    display: block;
+    padding: 5px 15px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(99, 201, 32);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+    margin: 10px auto 50px;  
+}
+
+.btn-cadastrar:hover { background-color: rgb(164, 231, 148); transform: scale(1.03); }
+
+
+
+/* LOGIN*/
+#login {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: rgb(215, 236, 209);
+    padding: 40px;
+    border-radius: 13px;
+    width:280px;
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: black;
+}
+
+.card-content label {
+    color: black;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid rgb(99, 201, 32);
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    background-color: rgb(99, 201, 32);
+    border:none;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+}
+
+/*ANUNCIO*/
+.btncadastro{
+    text-decoration: none;
+    color: rgb(99, 201, 32);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: -75px 25px;
+    float: right;
+}
+
+/*RODAPE*/
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(163, 226, 121);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;    
+    text-align: center;
+    line-height: 30px;
+}    
+
+/* MENU */
+#menu {
+    margin: 0;
+    width: auto;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 8px 0;
+    list-style: none;
+    height: auto;
+}
+
+#menu li {
+    display: inline;
+    padding: 8px;
+}
+
+#menu a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: rgb(164, 231, 148);
+    color: black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#menu li .active {
+    background-color: rgb(164, 231, 148);
+    color: black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 25px;
+}
+
+#texto h1{ 
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+#texto p { 
+    font-size: 17px;}
+
+#line {
+        background-color: rgb(163, 226, 121);
+        padding: 1px;
+}
+
+/*ANUNCIOS*/
+.linha1 { display: flex; justify-content: center; }
+.linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.legenda1 { display: flex; justify-content: center; }
+.legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 110px 10px; }
+.descricao1 { display: flex; justify-content: center; }
+.descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 10px; }
+.linha2 { display: flex; justify-content: center; }
+.linha2 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.legenda2 { display: flex; justify-content: center; }
+.legenda2 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 110px 10px; }
+.descricao2 { display: flex; justify-content: center; }
+.descricao2 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - MODA E BELEZA*/
+.mb-linha1 { display: flex; justify-content: center; }
+.mb-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.mb-legenda1 { display: flex; justify-content: center; }
+.mb-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 55px 10px; }
+.mb-descricao1 { display: flex; justify-content: center; }
+.mb-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 10px; }
+.mb-linha2 { display: flex; justify-content: center; }
+.mb-linha2 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.mb-legenda2 { display: flex; justify-content: center; }
+.mb-legenda2 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 110px 10px; }
+.mb-descricao2 { display: flex; justify-content: center; }
+.mb-descricao2 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 90px 100px; }
+
+/*ANUNCIOS - CASA*/
+.cs-linha1 { display: flex; justify-content: center; }
+.cs-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.cs-legenda1 { display: flex; justify-content: center; }
+.cs-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 70px 10px; }
+.cs-descricao1 { display: flex; justify-content: center; }
+.cs-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 10px; }
+.cs-linha2 { display: flex; justify-content: center; }
+.cs-linha2 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.cs-legenda2 { display: flex; justify-content: center; }
+.cs-legenda2 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 110px 10px; }
+.cs-descricao2 { display: flex; justify-content: center; }
+.cs-descricao2 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - AUTOMOTIVOS*/
+.au-linha1 { display: flex; justify-content: center; }
+.au-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.au-legenda1 { display: flex; justify-content: center; }
+.au-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 90px 10px; }
+.au-descricao1 { display: flex; justify-content: center; }
+.au-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - ELETRONICOS*/
+.el-linha1 { display: flex; justify-content: center; }
+.el-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.el-legenda1 { display: flex; justify-content: center; }
+.el-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 115px 10px; }
+.el-descricao1 { display: flex; justify-content: center; }
+.el-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 10px; }
+.el-linha2 { display: flex; justify-content: center; }
+.el-linha2 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.el-legenda2 { display: flex; justify-content: center; }
+.el-legenda2 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 90px 10px; }
+.el-descricao2 { display: flex; justify-content: center; }
+.el-descricao2 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - BRINQUEDOS*/
+.br-linha1 { display: flex; justify-content: center; }
+.br-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.br-legenda1 { display: flex; justify-content: center; }
+.br-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 90px 10px; }
+.br-descricao1 { display: flex; justify-content: center; }
+.br-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - ESPORTES*/
+.es-linha1 { display: flex; justify-content: center; }
+.es-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.es-legenda1 { display: flex; justify-content: center; }
+.es-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 70px 10px; }
+.es-descricao1 { display: flex; justify-content: center; }
+.es-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - SAUDE*/
+.sa-linha1 { display: flex; justify-content: center; }
+.sa-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.sa-legenda1 { display: flex; justify-content: center; }
+.sa-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 70px 10px; }
+.sa-descricao1 { display: flex; justify-content: center; }
+.sa-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - LAZER E ENTRETENIMENTO*/
+.la-linha1 { display: flex; justify-content: center; }
+.la-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.la-legenda1 { display: flex; justify-content: center; }
+.la-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 90px 10px; }
+.la-descricao1 { display: flex; justify-content: center; }
+.la-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+
+/*ANUNCIOS - PETSHOP*/
+.pet-linha1 { display: flex; justify-content: center; }
+.pet-linha1 img { width: 15%; height: auto; margin: 40px 40px 10px; padding: 1%; }
+.pet-legenda1 { display: flex; justify-content: center; }
+.pet-legenda1 h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; margin: 0px 70px 10px; }
+.pet-descricao1 { display: flex; justify-content: center; }
+.pet-descricao1 p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; margin: 0px 70px 100px; }
+

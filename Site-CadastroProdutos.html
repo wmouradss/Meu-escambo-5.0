@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Escambo</title>
+    <link rel="stylesheet" type="text/css" href="stylemeuescambo.css">
+</head>
+<body>
+    <div id="div"></div>
+
+    <div id="logomarca">
+        <img src="img/logo.png" alt="logo">
+    </div>
+   
+    <div class="container_form">
+        <h1>Cadastre seu artigo</h1>
+        <form class="form" action="adiciona-imagem2.php" method="post" enctype="multipart/form-data">
+            
+            <div class="form_grupo">
+                <label for="email" class="form_label">E-mail</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="digite seu e-mail" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="senha" class="form_label">Senha</label>
+                <input type="password" name="senha" class="form_input" id="senha" placeholder="digite sua senha" required>
+            </div>
+            <div class="form_grupo">
+                <label for="objeto" class="form_label">Objeto</label>
+                <input type="text" name="objeto" class="form_input" id="objeto" placeholder="informe o que é o objeto" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="marca" class="form_label">Marca</label>
+                <input type="text" name="marca" class="form_input" id="marca" placeholder="informe a marca do objeto" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="tamanho" class="form_label">Tamanho</label>
+                <input type="text" name="tamanho" class="form_input" id="tamanho" placeholder="informe o tamanho do objeto" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="tempodeuso" class="form_label">Tempo de uso</label>
+                <input type="text" name="tempodeuso" class="form_input" id="tempodeuso" placeholder="informe o tempo de uso do objeto" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="avaria" class="form_label">O objeto possui avarias?</label><br><br>
+                <input type="radio" name="avaria" value="sim"> sim
+                <input type="radio" name="avaria" value="nao"> não    
+            </div>
+
+            <div class="form_grupo">
+                <label for="imagem" class="form_label">Adicione uma imagem real do objeto</label><br><br>
+                <div class="anexar">
+                    <label for="selecao-arquivo" class="anexar_label">Escolha uma imagem</label>
+                    <input type="file" name="imagem" id="selecao-arquivo" accept="image/*" onchange="document.getElementById('file-name').innerHTML = this.value.split('\\').pop();" required>
+                    <span id="file-name"></span>             
+                </div>
+            </div>
+            <div class="form_grupo">
+                <label for="telefone" class="form_label">Telefone</label>
+                <input type="telefone" name="telefone" class="form_input" id="telefone" placeholder="(DDD) + número de telefone" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="contato" class="form_label">Escolha qual contato deseja exibir no anúncio:</label><br><br>
+                <input type="checkbox" name="contato" value="telefone"> telefone
+                <input type="checkbox" name="contato" value="email"> e-mail   
+            </div>
+
+            <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="submit" class="submit_btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
